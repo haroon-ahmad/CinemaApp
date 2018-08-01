@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">JAVAREA HUB</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="room_names">
+        <item>BedRoom1</item>
+        <item>BedRoom2</item>
+        <item>BedRoom3</item>
+        <item>BedRoom4</item>
+        <item>BedRoom5</item>
+        <item>BedRoom6</item>
+        <item>BedRoom7</item>
+        <item>BedRoom8</item>
+        <item>BedRoom9</item>
+        <item>BedRoom10</item>
+    </string-array>
+    <string-array name="device_names">
+        <item>Device1</item>
+        <item>Device2</item>
+        <item>Device3</item>
+        <item>Device4</item>
+    </string-array>
+    <string-array name="deviceswitchboard_names">
+        <item>Device1</item>
+        <item>Device2</item>
+        <item>Device3</item>
+    </string-array>
+    <string-array name="room_types">
+        <item>Bedroom</item>
+        <item>Washroom</item>
+        <item>Garage</item>
+        <item>Study</item>
+        <item>Kitchen</item>
+        <item>Balcony</item>
+        <item>Roof</item>
+        <item>Lounge</item>
+    </string-array>
+    <string-array name="switchboard_names">
+        <item>SwitchBoard1</item>
+        <item>SwitchBoard2</item>
+    </string-array>
+    <string-array name="spinnerarray">
+        <item>BedRoom</item>
+        <item>Aalu</item>
+        <item>Pokemon</item>
+    </string-array>
+    <string-array name="TypesOfPlaces">
+        <item>Bedroom</item>
+        <item>Master BedRoom</item>
+        <item>Kitchen</item>
+        <item>Living Room</item>
+        <item>Drawing Room</item>
+        <item>Dining Room</item>
+        <item>Store</item>
+        <item>Washroom</item>
+        <item>Garage</item>
+        <item>Balcony</item>
+        <item>Roof</item>
+        <item>Stairs</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="TypesOfSwitches">
+        <item>Light</item>
+        <item>Fan</item>
+        <item>Other </item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_setup">Setup</string>
+
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+    <string name="title_activity_login">LoginActivity</string>
+</resources>

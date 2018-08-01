@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.haroonahmad.javarea10.Outsource_Fragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refreshBtn"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView29"
+        android:layout_alignEnd="@+id/enablePort"
+        android:layout_alignStart="@+id/enablePort" />
+
+    <Button
+        android:text="Enable/Disable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:id="@+id/enablePort"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_below="@+id/textView29"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:text="Refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:id="@+id/refreshBtn"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:text="start and stop whenever you want"
+        android:layout_width="1000dp"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorAccent"
+        android:layout_height="275dp" />
+
+    <Button
+        android:text="Rent By Time"
+        android:layout_width="1000dp"
+        android:id="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/button3"
+        android:background="@color/colorAccent"
+        android:layout_height="275dp" />
+
+</RelativeLayout>

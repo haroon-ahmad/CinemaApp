@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.haroonahmad.javarea10.AddDevice">
+
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Add Device"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000"
+        android:background="#FEE11E" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:background="#FEE11E"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Add"
+        android:id="@+id/addDevice"
+        android:background="@drawable/imagebtn"
+        android:onClick="addDeviceBtnClick"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/deviceNameEditText"
+        android:layout_alignStart="@+id/deviceNameEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/textView5"
+        android:textColor="#030303"
+        android:layout_alignBaseline="@+id/deviceNameEditText"
+        android:layout_alignBottom="@+id/deviceNameEditText"
+        android:layout_toEndOf="@+id/spinner"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/portNumEditText"
+        android:background="#FEE11E"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/deviceNameEditText"
+        android:background="#FEE11E"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/portNumEditText"
+        android:layout_alignStart="@+id/portNumEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Type of Device"
+        android:id="@+id/textView3"
+        android:textColor="#000000"
+        android:layout_marginTop="83dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Port Number"
+        android:id="@+id/textView4"
+        android:layout_marginTop="95dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/spinner"
+        android:layout_alignStart="@+id/textView5" />
+
+
+</RelativeLayout>

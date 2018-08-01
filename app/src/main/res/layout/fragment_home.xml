@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.haroonahmad.javarea10.HomeFragment">
+
+
+    <ImageView
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/kik"
+        android:id="@+id/imageView13"
+        android:layout_width="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:text="We Give You The Light Of Earendil"
+        android:id="@+id/textView"
+        android:textColor="#030303"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/micButton"
+        android:onClick="micBtnClick"
+        android:background="@drawable/mic2"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/imageView13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+</RelativeLayout>

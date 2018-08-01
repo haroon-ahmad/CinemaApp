@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.haroonahmad.javarea10.SetupActivity.addRoomDetails">
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/typeofroom"
+        android:layout_alignBottom="@+id/textView9"
+        android:entries="@array/TypesOfPlaces"
+        android:layout_alignStart="@+id/RoomName"
+        android:layout_alignEnd="@+id/RoomName" />
+
+    <TextView
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="88dp"
+        android:id="@+id/roomnametexview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/RoomName"
+        android:layout_alignStart="@+id/roomnametexview" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/RoomName"
+        android:layout_alignBaseline="@+id/roomnametexview"
+        android:layout_alignBottom="@+id/roomnametexview"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="29dp" />
+
+    <Button
+        android:text="Next"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:id="@+id/addroomdetailsnext"
+        android:background="@drawable/imagebtn"
+        android:onClick="onNextClick"
+        android:layout_below="@+id/typeofroom"
+        android:layout_alignStart="@+id/typeofroom"
+        android:layout_marginTop="103dp" />
+</RelativeLayout>

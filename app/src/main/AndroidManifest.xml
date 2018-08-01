@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.haroonahmad.javarea10">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:name=".HelperClasses.javarea"
+        android:allowBackup="true"
+        android:icon="@drawable/smol"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Home"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <service
+            android:name=".Services.BackgroundExecutionService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Services.BluetoothSendService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Services.BluetoothIntentService"
+            android:exported="false" />
+
+        <activity android:name=".LoginSignup.Signup" />
+        <activity
+            android:name=".SetupActivity.Setup"
+            android:label="@string/title_activity_setup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginSignup.Login" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupFamily" />
+        <activity android:name=".SignupUser" />
+        <activity android:name=".MainActivity"></activity>
+
+        <receiver android:name=".HelperClasses.SmsListener">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".HelperClasses.MyBroadcastReceiver"></receiver>
+
+        <activity android:name=".splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
